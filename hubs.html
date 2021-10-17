@@ -23,7 +23,6 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 	<!-- Startup CSS (Styles for all blocks) - Remove ".min" if you would edit a css code -->
 	<link href="css/style.css" rel="stylesheet" />
-    <link href="css/nav.css" rel="stylesheet" />
 	<!-- jQuery 3.5.1 -->
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
@@ -99,47 +98,278 @@
 				</div>
 			</div>
 			<div class="row justify-content-lg-between justify-content-center">
-                <div class="pt-80 col-xl-5 col-lg-5 col-md-8 mt-5 mt-lg-0 pt-10 right_block">
-					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 1080" >
+				<div class="pt-80 col-xl-5 col-lg-5 col-md-8 mt-5 mt-lg-0 pt-10 right_block box-container">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+						viewBox="0 0 1080 1080">
 						<image width="1080" height="1080" xlink:href="i/hubs1.svg">
 						</image>
-						<a xlink:href="https://www.instagram.com/lilo.think">
+						<a xlink:href="#" data-toggle="modal" data-target="#toolkitModal">
 							<rect x="300" y="215" fill="#fff" opacity="0" width="520" height="150" />
 						</a>
-						<a xlink:href="https://www.lilo.zone">
+						<a xlink:href="#" data-toggle="modal" data-target="#expedicaoModal">
 							<rect x="300" y="550" fill="#fff" opacity="0" width="520" height="300" />
 						</a>
 					</svg>
 				</div>
 				<div class="col-xl-7 col-lg-6 col-md-8 text-center text-lg-left">
-					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 1080" >
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+						viewBox="0 0 1080 1080">
 						<image width="1080" height="1080" xlink:href="i/hubs2.svg">
 						</image>
-						<a xlink:href="#estudantes">
+						<a xlink:href="#" data-toggle="modal" data-target="#estudantesModal">
 							<rect x="300" y="215" fill="#fff" opacity="0" width="500" height="80" />
 						</a>
-						<a xlink:href="#professores">
+						<a xlink:href="#" data-toggle="modal" data-target="#professoresModal">
 							<rect x="300" y="400" fill="#fff" opacity="0" width="500" height="80" />
 						</a>
-						<a xlink:href="#coordenadoras">
+						<a xlink:href="#" data-toggle="modal" data-target="#coordenadorasModal">
 							<rect x="300" y="650" fill="#fff" opacity="0" width="520" height="200" />
 						</a>
 					</svg>
 				</div>
-			</div>
-		</div>
+
+				<!-- Apresentação Toolkit -->
+				<div id="toolkitModal" class="modal fade" tabindex="-1" role="dialog"
+					aria-labelledby="myLargeModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="pt-0 close h-10" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="pt-180 pb-160 bg-white color-main color-filter-light-7 content_15"
+								data-bg-src="i/camino-fotosautorizadas2021-1.jpeg"
+								data-bg-src-2x="i/camino-fotosautorizadas2021-1.jpeg">
+								<div class="container px-xl-0">
+									<div class="row">
+										<div class="col-lg-1">
+										</div>
+										<div class="col-lg-7 col-md-10">
+											<h2 data-aos="fade-down" data-aos-delay="0">
+												Camino School Toolkit
+											</h2>
+											<div class="mt-15 f-22 text-adaptive bold">
+												<i>Hub</i> de acesso a informações sobre a Camino School para informar
+												tanto
+												o
+												público
+												interno* (professores, funcionários, estudantes e famílias) quanto o
+												externo*
+												(pessoas,
+												escolas e veículos de comunicação interessados) com relação aos
+												<a href="#" data-toggle="popover" class="link action-1 underline"
+													data-content="Visualização organograma, Glossário CS, FAQ CS, Metodologias Ativas (PBL próprio), Trilinguismo, Currículo Vivo (BNCC, CC e Quadro Comum Europeu), Avaliação por rubricas de aprendizagem, Workshop Model (aula em formato de oficina), Diferenciação (divisão grupos, rubricas, Deep Learning), Individualização (ILP, Passion Project), Learning Support, Team Teaching / Teaching Collaboration (diversidade de tipos de professores colaborando entre si), Formação interna de professores, Governança. ">elementos</a>
+												fundamentais
+												que compõem a proposta pedagógica da escola.
+											</div>
+											<div class="mt-25 f-22 text-adaptive">
+												Seu objetivo é o de viabilizar uma narrativa compartilhada da Camino
+												School, promovendo alinhamento sobre os elementos da sua proposta
+												pedagógica.
+											</div>
+											<div class="mt-25 f-12 text-adaptive">
+												* com graus distintos de acesso e de profundidade em cada temática.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary action-1 f-12"
+									data-dismiss="modal">Fechar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Apresentação Expedição -->
+				<div id="expedicaoModal" class="modal fade" tabindex="-1" role="dialog"
+					aria-labelledby="myLargeModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="pt-0 close h-10" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="pt-180 pb-160 bg-white color-main color-filter-light-7 content_15"
+								data-bg-src="i/camino-fotosautorizadas2021-15.jpeg"
+								data-bg-src-2x="i/camino-fotosautorizadas2021-15.jpeg">
+								<div class="container px-xl-0">
+									<div class="row">
+										<div class="col-lg-1">
+										</div>
+										<div class="col-lg-7 col-md-10">
+											<h2 data-aos="fade-down" data-aos-delay="0">
+												Criação e Gestão de Expedições
+											</h2>
+											<div class="mt-15 f-22 text-adaptive bold">
+												<i>Hub</i> de acesso a <a href="#" data-toggle="popover"
+													class="link action-1 underline"
+													data-content="Hub documentação professores, Currículo com as visualizações desejadas (objetivos finais do ano, grandes competências e habilidades) e aberto para modificação do conteúdo, Standard Matrix, EUs Matrix, Caderno de Planejamento, Ongoing Assessment, Doc individual rubricas, Histórico escolar, Portfólio (com conexão com docs de gestão/assessment, docs de criação de expedições...)">documentos</a>
+												de referência (guias e manuais), de criação e
+												gestão das Expedições, assim como de compartilhamento dos resultados das
+												mesmas.
+											</div>
+											<div class="mt-25 f-22 text-adaptive">
+												Seu objetivo é o facilitar o acesso dos professores a tais documentações
+												e às orientações de como preenchê-las/utilizá-las.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary action-1 f-12"
+									data-dismiss="modal">Fechar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Apresentação Estudantes -->
+				<div id="estudantesModal" class="modal fade" tabindex="-1" role="dialog"
+					aria-labelledby="myLargeModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="pt-0 close h-10" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="pt-180 pb-160 bg-white color-main color-filter-light-7 content_15"
+								data-bg-src="i/camino-fotosautorizadas2021-21.jpeg"
+								data-bg-src-2x="i/camino-fotosautorizadas2021-21.jpeg">
+								<div class="container px-xl-0">
+									<div class="row">
+										<div class="col-lg-1">
+										</div>
+										<div class="col-lg-7 col-md-10">
+											<h2 data-aos="fade-down" data-aos-delay="0">
+												Estudantes
+											</h2>
+											<div class="mt-15 f-22 text-adaptive bold">
+												<i>Hub</i> de acesso:
+												<ul>
+													<li>
+														do estudante e sua família a informações e registros
+														relacionados às experiências de aprendizagem do estudante e suas
+														interações na escola.
+													</li>
+													<li>
+														do professor e da coordenação às informações de contato, saúde,
+														aprendizagem e interações do estudante e família com a escola.
+													</li>
+												</ul>
+											</div>
+											<div class="mt-25 f-22 text-adaptive">
+												Seu objetivo é o facilitar o acesso (1) dos professores e coordenação a
+												informações relacionadas a cada estudante e (2) estudantes e seus
+												responsáveis a informações relativas à aprendizagem e demais interações
+												com a escola.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary action-1 f-12"
+									data-dismiss="modal">Fechar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Apresentação Professores -->
+				<div id="professoresModal" class="modal fade" tabindex="-1" role="dialog"
+					aria-labelledby="myLargeModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="pt-0 close h-10" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="pt-180 pb-160 bg-white color-main color-filter-light-7 content_15"
+								data-bg-src="i/camino-fotosautorizadas2021-44.jpeg"
+								data-bg-src-2x="i/camino-fotosautorizadas2021-44.jpeg">
+								<div class="container px-xl-0">
+									<div class="row">
+										<div class="col-lg-1">
+										</div>
+										<div class="col-lg-7 col-md-10">
+											<h2 data-aos="fade-down" data-aos-delay="0">
+												Professores
+											</h2>
+											<div class="mt-15 f-22 text-adaptive bold">
+												<i>Hub</i> de acessodo professor a informações constantes nos Hubs “Camino School Toolkit”, “Criação e Gestão de Expedições”, “Hub do Estudante” e dados relacionados às suas atribuições, tarefas e prazos, comunicados gerais, formação continuada, avaliação do trabalho docente e governança.
+												</ul>
+											</div>
+											<div class="mt-25 f-22 text-adaptive">
+												Seu objetivo é o facilitar o acesso dos professores às informações e documentos necessários para a realização da sua prática pedagógica.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary action-1 f-12"
+									data-dismiss="modal">Fechar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Apresentação Coordenadoras -->
+				<div id="coordenadorasModal" class="modal fade" tabindex="-1" role="dialog"
+					aria-labelledby="myLargeModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="pt-0 close h-10" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="pt-180 pb-160 bg-white color-main color-filter-light-7 content_15"
+								data-bg-src="i/camino-fotosautorizadas2021-5.jpeg"
+								data-bg-src-2x="i/camino-fotosautorizadas2021-5.jpeg">
+								<div class="container px-xl-0">
+									<div class="row">
+										<div class="col-lg-1">
+										</div>
+										<div class="col-lg-7 col-md-10">
+											<h2 data-aos="fade-down" data-aos-delay="0">
+												Coordenadoras
+											</h2>
+											<div class="mt-15 f-22 text-adaptive bold">
+												<i>Hub</i> de acesso das coordenações pedagógicas a informações constantes nos Hubs “Camino School Toolkit”, “Criação e Gestão de Expedições”, “Hub do Estudante”, “Hub do Professor” e dados relacionados às suas atribuições, tarefas e prazos, comunicados gerais, formação continuada, avaliação do trabalho da coordenação e governança.
+												</ul>
+											</div>
+											<div class="mt-25 f-22 text-adaptive">
+												Seu objetivo é o facilitar o acesso da coordenação pedagógica às informações e documentos necessários para a realização do seu trabalho.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary action-1 f-12"
+									data-dismiss="modal">Fechar</button>
+							</div>
+						</div>
+					</div>
+				</div>
 	</header>
-	
-	
+
+
 	<footer class="pt-55 pb-65 bg-light text-center footer_1">
 		<div class="container px-xl-0">
 			<div class="row justify-content-between align-items-center lh-40 links">
 				<div class="col-lg-4 col-sm-6 text-sm-right text-lg-left order-1 order-lg-0" data-aos="fade-down"
 					data-aos-delay="250">
 					<a href="index.html" class="link mr-15 color-main bold">
-						< VOLTAR
-					</a>
-					<!-- <a href="#" class="link mx-15 color-main bold">
+						< VOLTAR </a>
+							<!-- <a href="#" class="link mx-15 color-main bold">
 						Política de Uso
 					</a> -->
 				</div>
@@ -181,7 +411,11 @@
 	<script src="js/jquery.maskedinput.min.js"></script>
 	<!-- Startup JS (Custom js for all blocks) -->
 	<script src="js/script.js"></script>
-    <script src="js/nav.js"></script>
+	<script>
+		$(function () {
+			$('[data-toggle="popover"]').popover()
+		})
+	</script>
 </body>
 
 </html>

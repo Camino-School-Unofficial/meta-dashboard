@@ -105,7 +105,7 @@
 						<a xlink:href="#" data-toggle="modal" data-target="#estudantesModal" class="st2 h1">
 							<text x="540" y="240" text-anchor="middle">Estudantes</text>
 						</a>
-						<a xlink:href="#" data-toggle="modal" data-target="#preofessoresModal" class="st1 h1">
+						<a xlink:href="#" data-toggle="modal" data-target="#professoresModal" class="st1 h1">
 							<text x="540" y="440" text-anchor="middle">Professores</text>
 						</a>
 						<a xlink:href="#" data-toggle="modal" data-target="#coordenadorasModal" class="st2 h1">
@@ -235,9 +235,9 @@
 												Estudantes
 											</h2>
 											<div class="mt-15 f-22 text-adaptive bold">
-												<i>Hub</i> de <a href="#" data-toggle="popover"
-													class="link action-1 underline"
-													data-content="ILP (metas cog + SE relacionadas a annual goals), Onboarding estudantes / famílias, Infos essenciais, Anamnese, Learning Support, Registros ocorrências + comunicação com responsáveis, Frequência/ Presença (dados Diário de Classe), Entregas + Avaliações, Registros fotográficos, Portfólio, Rubricas, Progressão/delta de aprendizagem, Visualização Schedule, Infos Expedições, Passion Project, Check in, Acesso a Apps de aprendizagem, Acesso à Cloe, Autoavaliação, Histórico anos anteriores, Equipamentos do estudante, Entrada e Saída | ClipEscola, Infos alimentação.">acesso:</a>
+												<i>Hub</i> de <a href="#" data-toggle="popover" data-html="true"
+													data-img="i/estudantes.svg" class="link action-1 underline"
+													data-content="Página Inicial">acesso:</a>
 												<ul>
 													<li>
 														do estudante e sua família a informações e registros
@@ -290,9 +290,9 @@
 												Professores
 											</h2>
 											<div class="mt-15 f-22 text-adaptive bold">
-												<i>Hub</i> de acesso do professor a <a href="#" data-toggle="popover"
-													class="link action-1 underline"
-													data-content="Currículo docente CS, Avaliação / feedback do trabalho docente, formação continuada de professores, visualização formações / ano, área do conhecimento, mentoria/facilitação, gestão de sala de aula, banco de estratégias docentes, boas práticas | colegas CS, Demandas de entregas ao longo do ano, PDI - Plano de desenvolvimento Individual, onboarding professores visualização professores dedicados ao acompanhamento do almoço / grade, Informações gerais professores, contrato de trabalho, combinados, gestão de crises, atribuições, Documentação Governança, Minha(s) turma(s), Criação + Gestão Expedições, Meus mentorados PP, reserva de espaços, comunicação com as famílias, acesso à Cloe, acesso à biblioteca física, acesso à biblioteca digital CS, solicitação de materiais, equipamentos do professor.">informações</a>
+												<i>Hub</i> de acesso do professor a <a href="#" data-toggle="popover" data-html="true"
+												data-img="i/professores.svg" class="link action-1 underline"
+												data-content="Página Inicial">informações</a>
 												constantes nos Hubs “Camino School Toolkit”, “Criação e Gestão de
 												Expedições”, “Hub do Estudante” e dados relacionados às suas
 												atribuições, tarefas e prazos, comunicados gerais, formação continuada,
@@ -414,6 +414,16 @@
 	<script>
 		$(document).ready(function () {
 			$('[data-toggle="popover"]').popover();
+		});
+		$('[data-toggle="popover"]').on('show.bs.popover', function (e) {
+
+			// novo conteúdo para o popover
+			var conteudo = '<br>'
+				+ '<img width="800" src="' + $(this).data('img') + '">';
+
+			// adiciona o conteúdo da variável "conteudo"
+			$(this).attr("data-content", conteudo);
+
 		});
 	</script>
 </body>

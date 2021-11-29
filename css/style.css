@@ -5223,7 +5223,23 @@ b, strong {
   visibility: visible;
 }
 
-.st0{clip-path:url(#SVGID_00000064331475509909807100000000363556181962598075_);}
-.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#C91456;}
-.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
-.st3{fill:none;stroke:#FFFFFF;stroke-width:3.5674;stroke-linejoin:round;stroke-miterlimit:10;}
+.st0 {
+  clip-path:url(#SVGID_00000064331475509909807100000000363556181962598075_);
+}
+.st1 {
+  fill-rule:evenodd;
+  clip-rule:evenodd;
+  fill:#C91456;
+}
+.st1:hover {
+  fill:#f7a600;
+}
+.st2{
+  fill-rule:evenodd;
+  clip-rule:evenodd;
+  fill:#FFFFFF;
+}
+
+.st2:hover{
+  fill:#f7a600;
+}
